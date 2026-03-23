@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para ti ♡</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- React desde CDN (no necesita instalación) -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cursor personalizado -->
+  <div id="cur-cross"></div>
+  <div id="cur-dot"></div>
+  <div id="cur-ring"></div>
+
+  <!-- Fondo con ruido y gradiente -->
+  <div class="noise"></div>
+  <div id="bg"></div>
+
+  <!-- App React -->
+  <div id="root"></div>
+
+  <!--
+    ┌─────────────────────────────────────────────────┐
+    │  ORDEN DE CARGA IMPORTANTE:                     │
+    │  1. config.js  → edita esto para personalizar   │
+    │  2. app.js     → lógica de la app               │
+    └─────────────────────────────────────────────────┘
+  -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
